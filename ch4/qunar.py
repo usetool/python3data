@@ -48,7 +48,7 @@ def get_list(dep,item):
                 }
 
                 print("这一页数量：%d" % len(result['result']['data']['list']['results']))
-                # TODO 插入数据到表中
+                sheet_qunar_zyx.insert_one(result)
                 print("-----{}:产品end------".format(limit))
         else:
             print("没有对应的数据")
